@@ -620,3 +620,6 @@ pre tt:after {
     font-size: 100%;
   }
 }
+.sidebyside {
+  display: inline-block;
+}
