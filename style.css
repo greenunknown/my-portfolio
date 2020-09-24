@@ -9,8 +9,8 @@
 }
 
 body {
-    color: black;
-    background-color: white;
+    color: #ebebeb;
+    background-color: #1e1e1e;
     margin: 0;
     padding: 0;
 }
@@ -96,44 +96,13 @@ main {
     transition: var(--transition-speed);
 }
 
-/* .logo {
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-    text-align: center;
-    color: var(--text-secondary);
-    background: var(--bg-secondary);
-    font-size: 1.5rem;
-    letter-spacing: 0.3ch;
-    width: 100%;
-}
-
-.logo svg {
-    transform: rotate(0deg);
-    transition: transform var(--transition-speed);
-} */
-
-/* .navbar:hover .logo svg {
-    transform: rotate(-180deg);
-} */
-
 /* small screens */
 @media only screen and (max-width: 600px) {
-    /* .banner {
-        width: 100vw;
-        height: 35vh;
-        opacity: 1;
-    } */
-
     .navbar {
         bottom: 0;
         width: 100vw;
         height: 5rem;
     }
-    
-    /* .logo {
-        display: none;
-    } */
 
     .logo svg {
         transform: rotate(-90deg);
@@ -155,12 +124,6 @@ main {
 
 /* large screens */
 @media only screen and (min-width: 600px) {
-    /* .banner {
-        width: 100vw;
-        height: 35vh;
-        opacity: 1;
-    } */
-
     .navbar {
         top: 0;
         width: 5rem;
@@ -195,11 +158,14 @@ main {
     .logo svg {
         transform: rotate(0deg);
         transition: transform var(--transition-speed);
+        animation: color-rotate 2s ease-in;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
     }
 }
 
+
 footer {
-    
 }
 
 .icons {
@@ -219,9 +185,24 @@ footer {
 }
 
 .icon {
-    margin: 0.10rem;
+    margin: 1.5rem;
     width: 3rem;
     height: 3rem;
+}
+
+@keyframes color-rotate {
+    from {
+        filter: hue-rotate(0deg);
+    }
+    to {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.icon:hover {
+    animation: color-rotate 2s ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 .label {
@@ -238,6 +219,7 @@ footer {
     height: 100%;
     align-items: center;
     justify-content:center;
+    text-decoration: none;
 }
 
 .gallery {
