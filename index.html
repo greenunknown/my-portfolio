@@ -5,50 +5,208 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Brandon Le | Home</title>
 	<link rel="icon" href="images/favicon.png">
+	<link rel="stylesheet" href="style.css">
+	<link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
+    rel="stylesheet"
+  	/>
 </head>
 <body>
-	<section id="banner">
-		<div class="inner">
-			<h2>Brandon Le</h2>
-			<p>Software Engineer<br />
-			Game Developer<br />
-			Artist</p>
-		</div>
-		<a href="#one" class="more scrolly">Learn More</a>
-	</section>
-	<section id="one" class="wrapper alt style2">
-		<section class="spotlight">
-			<div class="image"><img src="images/pic01.jpg" alt="" /></div><div class="content">
-				<h2>Software Engineer</h2>
-				<p>From Web Development to Machine Learning</p>
-			</div>
-		</section>
-		<section class="spotlight">
-			<div class="image"><img src="images/pic02.jpg" alt="" /></div><div class="content">
-				<h2>Game Developer</h2>
-				<p>From Visual Novels to FPS to Farm Sims</p>
-			</div>
-		</section>
-		<section class="spotlight">
-			<div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content">
-				<h2>Artist</h2>
-				<p>From Digital Painting to 3D Animation</p>
-			</div>
-		</section>
-	</section>
-	<section id="about">
-
-	</section>
-
-	<footer id="footer">
-		<ul class="icons">
-			<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-			<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-			<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+	<nav class="navbar">
+		<ul class="navbar-nav">
+			<li class="logo">
+				<a href="index.html" class="nav-link">
+					<span class="link-text logo-text">Brandon Le</span>
+					<svg 
+						aria-hidden="true" 
+						focusable="false" 
+						data-prefix="fas" 
+						data-icon="space-shuttle" 
+						class="svg-inline--fa fa-space-shuttle fa-w-20" 
+						role="img" 
+						xmlns="http://www.w3.org/2000/svg" 
+						viewBox="0 0 640 512">
+						<path 
+							fill="currentColor" 
+							d="M592.604 208.244C559.735 192.836 515.777 184 472 184H186.327c-4.952-6.555-10.585-11.978-16.72-16H376C229.157 137.747 219.403 32 96.003 32H96v128H80V32c-26.51 0-48 28.654-48 64v64c-23.197 0-32 10.032-32 24v40c0 13.983 8.819 24 32 24v16c-23.197 0-32 10.032-32 24v40c0 13.983 8.819 24 32 24v64c0 35.346 21.49 64 48 64V352h16v128h.003c123.4 0 133.154-105.747 279.997-136H169.606c6.135-4.022 11.768-9.445 16.72-16H472c43.777 0 87.735-8.836 120.604-24.244C622.282 289.845 640 271.992 640 256s-17.718-33.845-47.396-47.756zM488 296a8 8 0 0 1-8-8v-64a8 8 0 0 1 8-8c31.909 0 31.942 80 0 80z"
+							class="fa-secondary"		
+						></path>
+					</svg>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a href="resume.html" class="nav-link">
+					<svg 
+						aria-hidden="true" 
+						focusable="false" 
+						data-prefix="fas" 
+						data-icon="file-alt" 
+						class="svg-inline--fa fa-file-alt fa-w-12" 
+						role="img" 
+						xmlns="http://www.w3.org/2000/svg" 
+						viewBox="0 0 384 512">
+						<path 
+							fill="currentColor" 
+							d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+							class="fa-secondary"		
+						></path>
+					</svg>
+					<span class="link-text">Resume</span>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a href="projects.html" class="nav-link">
+					<svg 
+						aria-hidden="true" 
+						focusable="false" 
+						data-prefix="fas" 
+						data-icon="clipboard-list" 
+						class="svg-inline--fa fa-clipboard-list fa-w-12" 
+						role="img" 
+						xmlns="http://www.w3.org/2000/svg" 
+						viewBox="0 0 384 512">
+						<path 
+							fill="currentColor" 
+							d="M336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM96 424c-13.3 0-24-10.7-24-24s10.7-24 24-24 24 10.7 24 24-10.7 24-24 24zm0-96c-13.3 0-24-10.7-24-24s10.7-24 24-24 24 10.7 24 24-10.7 24-24 24zm0-96c-13.3 0-24-10.7-24-24s10.7-24 24-24 24 10.7 24 24-10.7 24-24 24zm96-192c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm128 368c0 4.4-3.6 8-8 8H168c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16zm0-96c0 4.4-3.6 8-8 8H168c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16zm0-96c0 4.4-3.6 8-8 8H168c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16z"
+							class="fa-secondary"
+						></path>
+					</svg>
+					<span class="link-text">Projects</span>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a href="impossible-list.html" class="nav-link">
+					<svg 
+						aria-hidden="true" 
+						focusable="false" 
+						data-prefix="fas" 
+						data-icon="user-astronaut" 
+						class="svg-inline--fa fa-user-astronaut fa-w-14" 
+						role="img" 
+						xmlns="http://www.w3.org/2000/svg" 
+						viewBox="0 0 448 512">
+						<path 
+							fill="currentColor" 
+							d="M64 224h13.5c24.7 56.5 80.9 96 146.5 96s121.8-39.5 146.5-96H384c8.8 0 16-7.2 16-16v-96c0-8.8-7.2-16-16-16h-13.5C345.8 39.5 289.6 0 224 0S102.2 39.5 77.5 96H64c-8.8 0-16 7.2-16 16v96c0 8.8 7.2 16 16 16zm40-88c0-22.1 21.5-40 48-40h144c26.5 0 48 17.9 48 40v24c0 53-43 96-96 96h-48c-53 0-96-43-96-96v-24zm72 72l12-36 36-12-36-12-12-36-12 36-36 12 36 12 12 36zm151.6 113.4C297.7 340.7 262.2 352 224 352s-73.7-11.3-103.6-30.6C52.9 328.5 0 385 0 454.4v9.6c0 26.5 21.5 48 48 48h80v-64c0-17.7 14.3-32 32-32h128c17.7 0 32 14.3 32 32v64h80c26.5 0 48-21.5 48-48v-9.6c0-69.4-52.9-125.9-120.4-133zM272 448c-8.8 0-16 7.2-16 16s7.2 16 16 16 16-7.2 16-16-7.2-16-16-16zm-96 0c-8.8 0-16 7.2-16 16v48h32v-48c0-8.8-7.2-16-16-16z"
+							class="fa-secondary"
+						></path>
+					</svg>
+					<span class="link-text">Impossible List</span>
+				</a>
+			</li>
 		</ul>
-		<ul class="copyright">
-			<li>&copy; Brandon Le</li>
-		</ul>
-	</footer>
+	</nav>
+	<main>
+		<section id="about">
+			<h2>About</h2>
+			<p>
+				A PWN native who likes too many things and wears too many hats, 
+				but enjoys it! I'm a software engineer by trade and a game 
+				development and art hobbyist. I have worked on a few projects 
+				which you can check out below or in-depth <a href="projects.html">here</a>!
+			</p>
+		</section>
+		<section id="software-engineer">
+			<h2>Software Engineer | From Web Development to Machine Learning</h2>
+			<ul>
+				<li>
+					<img src="" alt="">
+					<p>Caption</p>
+				</li>
+				<li>
+					<img src="" alt="">
+					<p>Caption</p>
+				</li>
+				<li>
+					<img src="" alt="">
+					<p>Caption</p>
+				</li>
+			</ul>
+		</section>
+		<section id="game-dev">
+			<h2>Game Developer | From Visual Novels to FPS to Farm Sims</h2>
+			<ul>
+				<li>
+					<img src="" alt="">
+					<p>Caption</p>
+				</li>
+				<li>
+					<img src="" alt="">
+					<p>Caption</p>
+				</li>
+				<li>
+					<img src="" alt="">
+					<p>Caption</p>
+				</li>
+			</ul>
+		</section>
+		<section id="artist">
+			<h2> Artist | From Digital Painting to 3D Animation</h2>
+			<ul>
+				<li>
+					<img src="" alt="">
+					<p>Caption</p>
+				</li>
+				<li>
+					<img src="" alt="">
+					<p>Caption</p>
+				</li>
+				<li>
+					<img src="" alt="">
+					<p>Caption</p>
+				</li>
+			</ul>
+		</section>
+		<footer id="footer">
+			<ul class="icons">
+				<li>
+					<a href="#" class="icon brands">
+						<img src="fa-icons/github-brands.svg" alt="github icon">
+						<span class="label">Github</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="icon brands">
+						<img src="fa-icons/linkedin-brands.svg" alt="linkedin icon">
+						<span class="label">LinkedIn</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="icon brands">
+						<img src="fa-icons/twitter-brands.svg" alt="twitter icon">
+						<span class="label">Twitter</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="icon brands">
+						<img src="fa-icons/instagram-brands.svg" alt="instagram icon">
+						<span class="label">Instagram</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="icon brands">
+						<img src="fa-icons/artstation-brands.svg" alt="artstation icon">
+						<span class="label">ArtStation</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="icon brands">
+						<img src="fa-icons/youtube-brands.svg" alt="youtube icon">
+						<span class="label">YouTube</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="icon brands">
+						<img src="fa-icons/twitch-brands.svg" alt="twitch icon">
+						<span class="label">Twitch</span>
+					</a>
+				</li>
+			</ul>
+			<ul class="copyright">
+				<li>&copy; Brandon Le</li><li>Icons by <a href="https://fontawesome.com/">Font Awesome</a> <a href="https://fontawesome.com/license">License (CC BY 4.0)</a></li>
+			</ul>
+		</footer>
+	</main>
+	<script src="https://kit.fontawesome.com/c37a4cd233.js" crossorigin="anonymous"></script>
 </body>
 </html>
